@@ -1,4 +1,4 @@
-# Service API By Vercel
+# [Service API By Vercel](https://github.com/CoPoKo/service-api-by-vercel)
 
 [![](https://img.shields.io/npm/v/@copoko/service-api-by-vercel.svg?style=flat-square)](https://www.npmjs.com/package/@copoko/service-api-by-vercel)
 
@@ -6,7 +6,7 @@ CoPoKo Service API By Vercel
 
 ## License
 
-[GPL 3.0 Only](https://github.com/CoPoKo/ServiceAPIByVercel/blob/main/LICENSE)
+[GPL 3.0 Only](https://github.com/CoPoKo/service-api-by-vercel/blob/main/LICENSE)
 
 ## Copyright Notice
 
