@@ -1,4 +1,4 @@
-# ServiceAPIByVercel
+# Service API By Vercel
 
 [![](https://img.shields.io/npm/v/@copoko/service-api-by-vercel.svg?style=flat-square)](https://www.npmjs.com/package/@copoko/service-api-by-vercel)
 
