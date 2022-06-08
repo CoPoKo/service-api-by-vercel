@@ -10,12 +10,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: deploy
+      - name: Setup Deploy Private Key
+        env:
+          DEPLOY_KEY: ${{ secrets.TOKEN }}
         run: |
+          mkdir -p ~/.ssh/
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa 
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+      - name: deploy
+        run: |
           rm -rf .git
           git init
           git add .
           git commit -m "deploy"
-          git push --force "https://CoPoKoBot:${{ secrets.COPOKOBOT_GITHUB_TOKEN }}@github.com/CoPoKoBot/service-api.git" main:main
+          git push --force "https://github.com/CoPoKoBot/service-api.git"
