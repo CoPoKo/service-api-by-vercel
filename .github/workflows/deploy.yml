@@ -28,4 +28,4 @@ jobs:
           git init
           git add .
           git commit -m "deploy"
-          git push --force "https://github.com/CoPoKoBot/service-api.git"
+          git push --force "git@github.com:CoPoKoBot/service-api.git" main:main
