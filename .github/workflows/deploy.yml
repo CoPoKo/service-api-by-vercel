@@ -30,4 +30,4 @@ jobs:
           git commit -m "deploy"
           git branch -M main
           git remote add origin git@github.com:CoPoKoBot/service-api.git
-          git push --force
+          git push  --force --set-upstream origin main
