@@ -1,0 +1,21 @@
+name: deploy
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    if: github.repository == 'CoPoKo/ServiceAPIByVercel'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: deploy
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          rm -rf .git
+          git init
+          git add .
+          git commit -m "deploy"
+          git push --force "https://CoPoKoBot:${{ secrets.COPOKOBOT_GITHUB_TOKEN }}@github.com/CoPoKoBot/service-api.git" main:main
