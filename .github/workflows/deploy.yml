@@ -24,9 +24,10 @@ jobs:
           git config --global user.name "$NAME"
       - name: deploy
         run: |
-          git clone git@github.com:CoPoKoBot/service-api.git
-          # rm -rf .git
-          # git init
-          # git add .
-          # git commit -m "deploy"
-          # git push --force "git@github.com:CoPoKoBot/service-api.git" main:main
+          rm -rf .git
+          git init
+          git add .
+          git commit -m "deploy"
+          git branch -M main
+          git remote add origin git@github.com:CoPoKoBot/service-api.git
+          git push --force
