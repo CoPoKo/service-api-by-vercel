@@ -1,0 +1,14 @@
+{
+  "name": "copoko-service-api",
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/v0/(.*)",
+      "dest": "https://ipfs.infura.io:5001/api/v0/$1"
+    },
+    {
+      "src": "/ipfs/(.*)",
+      "dest": "https://ipfs.infura.io/ipfs/$1"
+    }
+  ]
+}

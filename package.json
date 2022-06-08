@@ -1,0 +1,29 @@
+{
+  "name": "@copoko/service-api-by-vercel",
+  "version": "0.0.1",
+  "description": "CoPoKo Service API By Vercel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoPoKo/ServiceAPIByVercel.git"
+  },
+  "author": "CoPoKo Team",
+  "keywords": [
+    "CoPoKo",
+    "Space",
+    "ServiceAPI"
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CoPoKo/ServiceAPIByVercel/issues"
+  },
+  "homepage": "https://github.com/CoPoKo/ServiceAPIByVercel#readme",
+  "dependencies": {
+    "google-translate-cn-api": "^1.0.8",
+    "axios": "^0.21.1",
+    "rss-parser": "^3.12.0"
+  }
+}
