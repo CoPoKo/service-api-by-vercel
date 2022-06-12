@@ -5,7 +5,7 @@ on:
 
 jobs:
   deploy:
-    if: github.repository == 'CoPoKo/ServiceAPIByVercel'
+    if: github.repository == 'CoPoKo/service-api-by-vercel'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

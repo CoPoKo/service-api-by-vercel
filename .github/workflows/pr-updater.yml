@@ -5,7 +5,7 @@ on:
 
 jobs:
   autoupdate:
-    if: github.repository == 'CoPoKo/ServiceAPIByVercel'
+    if: github.repository == 'CoPoKo/service-api-by-vercel'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

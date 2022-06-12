@@ -12,7 +12,7 @@ on:
 
 jobs:
   comment:
-    if: github.repository == 'CoPoKo/ServiceAPIByVercel'
+    if: github.repository == 'CoPoKo/service-api-by-vercel'
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v3

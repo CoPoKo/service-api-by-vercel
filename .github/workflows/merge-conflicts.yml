@@ -4,7 +4,7 @@ on:
 
 jobs:
   triage:
-    if: github.repository == 'CoPoKo/ServiceAPIByVercel'
+    if: github.repository == 'CoPoKo/service-api-by-vercel'
     runs-on: ubuntu-latest
     steps:
       - uses: mschilde/auto-label-merge-conflicts@master
