@@ -1,6 +1,6 @@
 {
   "name": "@copoko/service-api-by-vercel",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CoPoKo Service API By Vercel",
   "main": "index.js",
   "scripts": {
