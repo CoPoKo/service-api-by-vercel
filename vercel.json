@@ -8,7 +8,7 @@
     },
     {
       "src": "/ipfs/(.*)",
-      "dest": "https://ipfs.infura.io/ipfs/$1"
+      "dest": "https://ipfs.io/ipfs/$1"
     }
   ]
 }
